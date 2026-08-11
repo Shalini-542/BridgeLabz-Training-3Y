@@ -1,0 +1,193 @@
+# ASSIGNMENT 1
+## Introduction to Web Development
+
+### 1. Difference Between Frontend, Backend and Full-Stack Development
+
+Frontend Development is the part of a website that users can see and interact with. It is mainly developed using HTML, CSS and JavaScript. For example, buttons, menus and pages of an online shopping website.
+
+Backend Development is the server-side part of a website. It handles data, business logic, user authentication and requests. For example, when a user logs into a website, the backend checks the username and password.
+
+Full-Stack Development means working on both frontend and backend of a web application. For example, a developer can create the website interface as well as the server and database.
+
+---
+
+### 2. Client-Server Model
+
+The client-server model is a system where the client sends a request to the server and the server sends a response back.
+
+CLIENT (Web Browser)
+        |
+        | Request
+        v
+SERVER
+        |
+        | Response
+        v
+CLIENT (Web Browser)
+
+For example, when we open a website, the browser sends a request to the server. The server processes the request and sends the webpage back to the browser.
+
+---
+
+### 3. How a Browser Requests and Displays a Web Page
+
+The process works as follows:
+
+1. The user enters a website address in the browser.
+2. The browser sends a request to the web server.
+3. The web server receives and processes the request.
+4. The server sends HTML, CSS, JavaScript and other files to the browser.
+5. The browser receives these files.
+6. The browser processes and renders the files.
+7. The webpage is displayed to the user.
+
+User
+  |
+  v
+Browser
+  |
+  | Request
+  v
+Web Server
+  |
+  | Response
+  v
+HTML + CSS + JavaScript
+  |
+  v
+Web Page Displayed
+
+---
+
+### 4. Tools Required for Web Development
+
+1. VS Code - Used to write and edit code.
+2. Web Browser - Used to test and view websites.
+3. Git - Used for version control.
+4. GitHub - Used to store and share code online.
+5. Node.js - Used to run JavaScript outside the browser.
+6. npm - Used to install and manage packages.
+7. Live Server - Used to run and preview web pages locally.
+
+---
+
+### 5. What is a Web Server?
+
+A web server is a computer or software that receives requests from clients and sends web pages or other resources in response.
+
+Some commonly used web servers are:
+
+- Apache HTTP Server
+- Nginx
+- Microsoft IIS
+- LiteSpeed
+- Apache Tomcat
+
+For example, when we open a website in a browser, the browser sends a request to the web server and the server sends the required webpage back.
+
+---
+
+### 6. Roles of Frontend Developer, Backend Developer and Database Administrator
+
+Frontend Developer:
+- Creates the user interface of a website.
+- Uses HTML, CSS and JavaScript.
+- Makes websites interactive and responsive.
+
+Backend Developer:
+- Develops server-side applications.
+- Handles business logic and APIs.
+- Connects the application with the database.
+
+Database Administrator:
+- Manages databases.
+- Stores and organizes data.
+- Maintains database security and backups.
+
+---
+
+### 7. VS Code Setup for HTML, CSS and JavaScript
+
+Visual Studio Code (VS Code) is a popular code editor used for web development.
+
+For HTML, CSS and JavaScript development, we can use:
+
+- Visual Studio Code
+- HTML
+- CSS
+- JavaScript
+- Live Server Extension
+- Prettier Extension
+
+
+Screenshot:
+vscode_screenshot.png
+
+---
+
+### 8. Difference Between Static and Dynamic Websites
+
+Static Website:
+
+A static website contains fixed content. The content usually does not change automatically based on the user.
+
+Example: A personal portfolio or resume website.
+
+Dynamic Website:
+
+A dynamic website can change its content according to the user, database or other information.
+
+Example: Amazon, Instagram or an online banking website.
+
+Difference:
+
+Static Website:
+- Fixed content
+- Simple to develop
+- Usually does not require a database
+- Example: Portfolio website
+
+Dynamic Website:
+- Changing content
+- More complex
+- Usually uses a database
+- Example: Amazon
+
+---
+
+### 9. Five Web Browsers and Their Rendering Engines
+
+1. Google Chrome - Blink
+2. Microsoft Edge - Blink
+3. Mozilla Firefox - Gecko
+4. Safari - WebKit
+5. Opera - Blink
+
+A rendering engine converts HTML and CSS code into the webpage that users see on the screen.
+
+Different browsers may use different rendering engines, so a website can sometimes look or behave slightly differently in different browsers.
+
+---
+
+### 10. Basic Web Architecture Flow
+
+CLIENT
+(Web Browser)
+     |
+     | HTTP Request
+     v
+SERVER
+(Backend/API)
+     |
+     +----------------+
+     |                |
+     v                v
+DATABASE             APIs
+     |                |
+     +-------+--------+
+             |
+             | Response
+             v
+          CLIENT
+      (Web Browser)
+
