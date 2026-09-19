@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Principles</title>
+    <link rel="stylesheet" href="Assignment-9(9).css"
+</head>
+<body>
+
+    <main>
+        <h1>Responsive Design Principles</h1>
+
+        <section class="principles">
+
+            <!-- Fluid Layout -->
+            <article class="box">
+                <h2>Fluid Layouts</h2>
+
+                <p>
+                    Fluid layouts use flexible units such as percentages
+                    to adjust according to screen size.
+                </p>
+
+                <pre>
+width: 100%;
+max-width: 1200px;
+                </pre>
+            </article>
+
+            <!-- Flexible Media -->
+            <article class="box">
+                <h2>Flexible Media</h2>
+
+                <p>
+                    Images and videos should resize automatically so they
+                    fit inside their containers.
+                </p>
+
+                <pre>
+img {
+    max-width: 100%;
+    height: auto;
+}
+                </pre>
+            </article>
+
+            <!-- Breakpoints -->
+            <article class="box">
+                <h2>Breakpoints</h2>
+
+                <p>
+                    Media queries allow different styles for different
+                    screen sizes.
+                </p>
+
+                <pre>
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+                </pre>
+            </article>
+
+        </section>
+    </main>
+
+</body>
+</html>

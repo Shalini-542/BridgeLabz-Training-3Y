@@ -1,0 +1,138 @@
+/* Basic styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+/* Header using Flexbox */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #222;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+/* Main using Grid */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px 8%;
+    animation: fadeIn 1s ease;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Gallery */
+.images {
+    display: grid;
+    gap: 10px;
+}
+
+.images img {
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.images img:hover {
+    transform: scale(1.03);
+}
+
+/* Explanation */
+.explanation p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Cheat sheet */
+.topic {
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #eee;
+    border-radius: 6px;
+}
+
+.topic h3 {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+}
